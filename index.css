@@ -14,7 +14,7 @@ html{
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-weight: 400;
-    padding-left: 70%;
+    padding-left: 50%;
     color: white;
     
 }
@@ -68,10 +68,10 @@ html{
 .menu{
     margin-top: 70px;
     /* background-color: yellow; */
-    background-image: url("https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbHBhcGVyJTIwd29vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    /* background-image: url("https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbHBhcGVyJTIwd29vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"); */
 }
 .orders{
-    background-color: yellow;
+    background-color: wheat;
     margin-top: 70px;
     align-items: center;
 }
