@@ -68,3 +68,12 @@ html{
 .menu{
     margin-top: 70px;
 }
+.orders{
+    background-color: coral;
+    margin-top: 70px;
+    align-items: center;
+}
+#checkout{
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
