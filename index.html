@@ -97,7 +97,7 @@
             </div>
 
             <div class="card-hidden1">
-              <p class="title"><b>MEDIUM</b></p>
+              <!-- <p class="title"><b>MEDIUM</b></p> -->
               <p>
                 Ksh.700
               </p>
@@ -115,7 +115,7 @@
               <h2><b>Large</b></h2>
             </div>
             <div class="card-hidden2">
-              <p class="title"><b>LARGE</b></p>
+              <!-- <p class="title"><b>LARGE</b></p> -->
               <p>
                 Ksh.1100
               </p>
@@ -134,7 +134,7 @@
             </div>
 
             <div class="card-hidden3">
-              <p class="title"><b>X-LARGE</b></p>
+              <!-- <p class="title"><b>X-LARGE</b></p> -->
               <p>
                 Ksh.1500
               </p>
@@ -181,9 +181,7 @@
           <option value="">Crispy @ Ksh.100</option>
           <option value="">Stuffed @ Ksh.100</option>
           <option value="">Gluten FreeStuffed Crust @ Ksh.300</option>
-          <option value="">Flat Bread Crust @ Ksh. 100</option>
-          <option value="">Thin Crust @ Ksh. 150</option>
-          <option value="">Thick Crust Pizza @ Ksh. 300</option>
+          
             
         </select>
         
@@ -194,9 +192,7 @@
           <option value="">Extra Cheese @ Ksh.150</option>
           <option value="">Onions @ Ksh. @Ksh.120</option>
           <option value="">Black Olives @ Ksh.120</option>
-          <option value="">Sausage @ Ksh.100</option>
-          <option value="">Green Pepper@ Ksh.80</option>
-          <option value="">Mushrooms @ Ksh.70</option>
+          
             
         </select>
         
@@ -217,14 +213,16 @@
        </div>
      </div>
      <!--End of order section-->
-     <div class="order-summary" id="summary">
+     <div class="order-summary">
        <div class="text-center">
          <h1><b>Order Summary</b></h1>
+         <div id="summary">
          <p>Hello,your order is as follows</p>
          <ol id="list" class="sum text-center"></ol>
          <div class="overlay1">
            <div class="customerdata">
              <div class="rows">
+               <div class="col-md-7">
               <form action="">
                 <div class="form-group">
                   <input type="text" class="form-control" id="name1" placeholder="Enter Name" required>
@@ -241,7 +239,7 @@
 
                 <button type="submit" class="btn btn-primary">Make Delivery</button>
               </form>
-              
+            </div>
              </div>
             </div>
           </div>
@@ -273,7 +271,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
-                <textarea id="text" type="text" placeholder="Your message here..." cols="100" rows="10" name="message"></textarea>
+                <textarea id="text" type="text" placeholder="Your message here..." cols="100" rows="7" class="message"></textarea>
                 </div>
               </div>
               <button id="btn" type="subscribe" class="btn btn-primary col-md-1">subscribe</button>
