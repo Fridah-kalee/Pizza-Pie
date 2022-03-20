@@ -81,7 +81,7 @@ html{
     /* background-image: url("https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbHBhcGVyJTIwd29vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"); */
 }
 .orders{
-    background-color: wheat;
+    background-color: yellow;
     margin-top: 70px;
     align-items: center;
 }
@@ -98,12 +98,12 @@ html{
     text-align: space-between;
     justify-content: center;
 } */
-#name{
+#name1{
     margin-left: 20%;
     
     
 }
-#email{
+#email1{
     margin-left: 20%;
     
 }
@@ -121,12 +121,12 @@ html{
 .deliver{
     margin-top: 40px;
     margin-bottom: 50px;
-    color: #fff;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
     letter-spacing: 2px;
-    background-color: red;
+    background-color: yellow;
     outline: none;
     padding: 12.5px 13px;
     border: none;
@@ -136,12 +136,12 @@ html{
 .delivernot{
     margin-top: 40px;
     margin-bottom: 50px;
-    color: #fff;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
     letter-spacing: 2px;
-    background-color: red;
+    background-color: yellow;
     outline: none;
     padding: 12.5px 13px;
     border: none;
@@ -165,15 +165,20 @@ html{
     color: black;
     margin-top: 70px;
   }
+  .contact .row{
+      display: flex;
+      justify-content: center;
+      margin: 0px 150px;
+  }
 
-  #on-click{
+  #btn{
       text-align: center;
-      margin-left: 40%;
+      margin-bottom: 40px;
   }
 #name,
 #email,
 #text,
-#on-click {
+#btn {
     border: 1px solid white;
     background-color: transparent;
     color: white;
@@ -181,4 +186,8 @@ html{
 .contacts {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+#footer1{
+    text-align: center;
+   
 }
