@@ -89,11 +89,62 @@ html{
     margin-bottom: 50px;
     margin-top: 40px;
 }
-.socials{
+/* .socials{
     display: flex;
     height: 3vh;
     width: 2vw;
     color: red;
     text-align: space-between;
     justify-content: center;
+} */
+#name{
+    margin-left: 20%;
+    
+    
+}
+#email{
+    margin-left: 20%;
+    
+}
+#mobile-number{
+    margin-left: 20%;
+    
+}
+#location{
+    margin-left: 20%;
+    
+}
+.form-control:input-placeholder {
+    color: white;
+  }
+.deliver{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+    background-color: red;
+    outline: none;
+    padding: 12.5px 13px;
+    border: none;
+    border-radius: 33px;
+    font-size: 14px;
+}
+.delivernot{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+    background-color: red;
+    outline: none;
+    padding: 12.5px 13px;
+    border: none;
+    border-radius: 33px;
+    font-size: 14px;
+
 }
