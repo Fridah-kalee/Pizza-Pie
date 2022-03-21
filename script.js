@@ -206,7 +206,7 @@ let price, totalPrice;
                               $('#list').text("");
                               $('#list').append("<br>"+ "flavor:" + newOrder.flavor + "<br>" +"size:"
                               +newOrder.size + "<br>" +"crust:"
-                              +newOrder.crust + "br>" +"toppings:"
+                              +newOrder.crust + "<br>" +"toppings:"
                               +newOrder.toppings + "<br>" +"number:"
                               +newOrder.number + "<br>" +"totalPrice:"
                            });
@@ -227,5 +227,9 @@ let price, totalPrice;
 
                       
                           $(document).ready(function(){
+                            $(function(){
+                              $.scrollify.move('#summary');
+                          });
+                  });
 
-                          }                    
+                                              
