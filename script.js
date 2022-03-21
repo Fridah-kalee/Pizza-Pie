@@ -1,12 +1,12 @@
 $function(){
-  $('.order-summary').hide();
+  $('#summary').hide();
   $('.customerdata').hide();
   $('#checkout').click(function(){
-    let flavour=$(".flavour option:selected").value();
-    let size=$(".size option:selected").value();
-    let crust=$(".crust option:selected").value();
-    let topping=$(".topping option:selected").value();
-    let number=$(".number option").value();
+    let flavor=$(".flavor option:selected").val();
+    let size=$(".size option:selected").val();
+    let crust=$(".crust option:selected").val();
+    let topping=$(".topping option:selected").val();
+    let number=$(".number option").val();
     console.log(size);
 
     let order =(flavor,size,crust,topping,number,total)=>{
@@ -143,7 +143,7 @@ let price, totalPrice;
                                             break;
                                         }
 
-                                        break;{
+                                        break;
                                           case flavour = "chicken hawaiian":
                                               switch (size){
                                                   case size = "medium":
@@ -186,7 +186,7 @@ let price, totalPrice;
                                                   }
                                                   break;
                                                 };
-                                                switch(topping{
+                                                switch(topping){
                                                   case topping="extra cheese":
                                                     totalPrice=totalPrice+150;
                                                     break;
@@ -197,26 +197,26 @@ let price, totalPrice;
                                                     totalPrice=totalPrice+120;
                                                     break;
                                                 };
-                              let  newOrder=order(flavour,size,crust,topping,number,totalPrice);
+                              let  newOrder= order(flavor,size,crust,topping,number,totalPrice);
                               console.log(newOrder);
 
-                              $('.order-summary').slideDown(3000);
+                              $('#summary').slideDown(3000);
                               $('.customerdata').slideUp();
                               $('#list').slideDown();
                               $('.deliver').show(1000);
                               $('.delivernot').show(1000);
                               $('#list').text("");
-                              $('#list').append("br")+"flavour:" + newOrder.flavour + "br" +"size:"
-                              newOrder.size + "br" +"crust:"
-                              newOrder.crust + "br" +"toppings:"
-                              newOrder.toppings + "br" +"number:"
-                              newOrder.number + "br" +"totalPrice:"
+                              $('#list').append("<br>"+ "flavor:" + newOrder.flavor + "<br>" +"size:"
+                              +newOrder.size + "<br>" +"crust:"
+                              +newOrder.crust + "br>" +"toppings:"
+                              +newOrder.toppings + "<br>" +"number:"
+                              +newOrder.number + "<br>" +"totalPrice:"
                            });
 
                             $(".deliver").click(function(){
-                            $('.order-summmary').slideUp();
+                            $('#summmary').slideUp();
                             $('#list').slideUp();
-                            $('.order-summmary').text("provide location details").slideDown();
+                            $('#summmary').text("provide location details").slideDown();
                             $('.deliver').hide(1000);
                             $('.delivernot').hide(1000);
                             $('.customerdata').slideDown();
@@ -226,4 +226,8 @@ let price, totalPrice;
                            $('.delivernot').click(function(){
                            alert('Thankyou for placing your order kindly come pick after thirty minutes.')
                           });
-                                              
+
+                      
+                          $(document).ready(function(){
+
+                          }                    
