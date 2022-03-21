@@ -92,14 +92,14 @@
               <img
                 src="./assets/img2.jpeg"
                 class="img-fluid"
-                alt="medium_icon"/>
-              <h2><b>Medium</b></h2>
+                alt="small_icon"/>
+              <h2><b>small</b></h2>
             </div>
 
             <div class="card-hidden1">
               <!-- <p class="title"><b>MEDIUM</b></p> -->
               <p>
-                Ksh.700
+                Ksh.500
               </p>
             </div>
           </div>
@@ -110,14 +110,14 @@
               <img
                 src="./assets/img4.jpeg"
                 class="img-fluid"
-                alt="large_icon"
+                alt="medium_icon"
               />
-              <h2><b>Large</b></h2>
+              <h2><b>Medium</b></h2>
             </div>
             <div class="card-hidden2">
               <!-- <p class="title"><b>LARGE</b></p> -->
               <p>
-                Ksh.1100
+                Ksh.700
               </p>
               
             </div>
@@ -129,14 +129,14 @@
               <img
                 src="./assets/img1.jpeg"
                 class="img-fluid"
-                alt="x-large_icon"/>
-              <h2><b>x-large</b></h2>
+                alt="large_icon"/>
+              <h2><b>large</b></h2>
             </div>
 
             <div class="card-hidden3">
               <!-- <p class="title"><b>X-LARGE</b></p> -->
               <p>
-                Ksh.1500
+                Ksh.1100
               </p>
             </div>
           </div>
@@ -146,113 +146,72 @@
   </div>
 
      <!--order section-->
-     <div class="orders" id="orders">
-       <h1 class="text-center" id="order-pizza"><b>Order pizza</b></h1>
-       <div class="form-group row">
-       <div class="col-sm-2"></div>
-       <div class="col-sm-8 order-overlay text-center">
-     <form>
-      
-      <div class="form-group">
-        <label>Choose your preferred pizza flavour</label>
-        <select class="custom-select custom-select-md mb-3 flavour" required>
-          <option value="">Chicken Tikka</option>
-          <option value="">BBQ Steak</option>
-          <option value="">Peri-Peri Chicken</option>
-          <option value="">Chicken Hawaiian</option>
-          
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Choose Pizza Size</label>
-        <select class="custom-select custom-select-md mb-3 flavour" id="size" required>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
-          <option value="x-large">X-Large</option>
-          
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Choose Pizza Crust</label>
-        <select class="custom-select custom-select-md mb-3 flavour" id="crust" required>
-          <option value="">Crispy @ Ksh.100</option>
-          <option value="">Stuffed @ Ksh.100</option>
-          <option value="">Gluten FreeStuffed Crust @ Ksh.300</option>
-          
-            
-        </select>
-        
-      </div>
-      <div class="form-group">
-        <label>Choose your prefered Toppings</label>
-        <select class="custom-select custom-select-md mb-3 flavour" id="toppings" required>
-          <option value="">Extra Cheese @ Ksh.150</option>
-          <option value="">Onions @ Ksh. @Ksh.120</option>
-          <option value="">Black Olives @ Ksh.120</option>
-          
-            
-        </select>
-        
-      </div>
-      <div class="form-group">
-        <label for="number">Number of Pizza's</label>
-        <input type="number" class="form-control" id="number" placeholder="Pizza's Quantity" min="1" required>
-        
-    </form>
-       </div>
-       <a href="#summary">
-        <button type="submit" class="btn btn-success checkout" id="checkout" > Checkout </button>
-    </a>
-</div>
-<div class="col-sm-2"></div>
-</div>
-</div>
-       </div>
-     </div>
-     <!--End of order-->
+      <div id="orders"  class="container-fluid">                
+      <section class="container-fluid img-fluid">
+         <h2 class="text-center"><b><span style="color: black);">Complete your Order</span></b></h2>
+         <form action=""  class="p-3" required id="formpizza">
+             <div class="form-group" style="background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHJlc3RhdXJhbnQlMjBzZXR0aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'); background-repeat: no-repeat;background-size: cover;text-align: center;" >
+                 <label for="name" class="p-3">
+                     <label for=""><b>Pizza Size</b></label>
+                     <br>
+                     <select name="" id="pizza">
 
-     
-     
-     <div class="order-summary">
-       <div class="text-center">
-         <h1><b>Order Summary</b></h1>
-         <div id="summary">
-         <p>Hello,your order is as follows</p>
-         <ol id="list" class="sum text-center"></ol>
-    
-
-           <div class="customerdata">
-             <div class="rows">
-               <div class="col-md-7">
-              <form action="">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="name1" placeholder="Enter Name" required>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="email1" placeholder="Enter Email">
-                </div>
-                <div class="form-group">
-                  <input type="number" class="form-control" id="mobile-number" placeholder="Enter mobile number" required>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="location" placeholder="Enter location" required>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Make Delivery</button>
-              </form>
+                         <option  value="350">small @sh500</option>
+                         <option value="790">medium @sh700</option>
+                         <option value="1350">large @sh1100</option> 
+                     </select>
+                     <br>
+                     <br>
+                     <label for=""><b>Choose Crust</b></label>
+                     <br>
+                     <select name="" id="crust">
+                         <option value="0">none</option>
+                      <option value="550"> crispy @sh550 </option>
+                      <option value="950"> gluten @sh950</option>
+                      <option value="1550"> stuffed-free @sh1550</option> 
+                  </select>
+                     <br>
+                  <label for=""><b>Toppings</b></label>
+                  <br>
+                  <select name="" id="toppings">
+                      <option value="0">none</option>
+                      <option value="100">Pepperoni @sh100 </option>
+                      <option value="150">Mushroom @sh150</option>
+                      <option value="850">Black olives @850</option> 
+                  </select>
+                  <br>
+                  <button type="submit" id="deliver"  class="btn btn-danger" style="margin-top: 10%; color: white;"><a class="make" href="#form2">place order</a> </button>
             </div>
-             </div>
-            </div>
+     </form>
+   </div>
+   <p class="pad" id="ok"></p>
+<div class="yes">
+<p>Would you like the pizza to be delivered to your place?</p>
+<button class="change" id="yes">yes</button>
+<button class="change" id="no">no</button>
+</div>
+
+<form id="form2" action="">
+<div  class="form-group text-center" style="text-align: center;">
+  <input type="text" id="name" class="form-control mb-3" value="" placeholder="Customer's name..." required>
+  <input type="number" id="phone" class="form-control mb-3" value="" placeholder="Phone eg,+254729040302" required>
+  <input type="text" id="place" class="form-control mb-3" value="" placeholder="Location eg, address" required>
+  <div class="payment">
+                 <h2><b>Form of payment</b></h2>
+                 <p><input type="radio" name="payment" value="else"><span style="color: red;">cash on delivery</span></p>
           </div>
-        </div>
-      </div>
-      <div class="d-block mx-auto text-center">
-        <button class='deliver'>Make Delivery</button>
-        <button class='delivernot'>Pick Up</button>
-    </div> 
-    <!--contact us section-->
-     
+  <button class="change" id="finalorder" onclick="amount()">Order</button>
+</div>
+</form>
 
+</div>
+     
+<!--End of order-->
+
+     
+     
+     
+    <!--contact us section-->    
       <div class="contact" id="Contacts" style="background-image: url('./assets/image3.jpeg');">
         <h1 class="text-center" id="contacts"><b>Contact Us</b></h1>
         <p class="text-center">+254 705 306 008</p>
@@ -260,19 +219,19 @@
           <div class="row">
             <div class="col-md-4">
               <div class="form-group">
-                <input id="name" type="text" name="name" placeholder="FName..." required>
+                <input id="name1" type="text" name="name" placeholder="FName..." required>
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <input id="email" type="email" name="email" placeholder="Email..." required>
+                <input id="email1" type="email" name="email" placeholder="Email..." required>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
-                <textarea id="text" type="text" placeholder="Your message here..." rows="7" class="message"></textarea>
+                <textarea id="text1" type="text" placeholder="Your message here..." rows="7" class="message"></textarea>
                 </div>
               </div>
               <button id="btn" type="subscribe" class="btn btn-primary col-md-1">subscribe</button>

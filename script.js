@@ -1,235 +1,88 @@
-$function(){
-  $('#summary').hide();
-  $('.customerdata').hide();
-  $('#checkout').click(function(){
-    let flavor=$(".flavor option:selected").val();
-    let size=$("#size option:selected").val();
-    let crust=$("#crust option:selected").val();
-    let topping=$("#topping option:selected").val();
-    let number=$("#number").val();
-    console.log(size);
-
-    let order =(flavor,size,crust,topping,number,total)=>{
-      return {flavor,size,crust,topping,number,total};
-    };
+function orders(pizza, toppings, crust){
+    this.pizza=pizza;
+    this.toppings=toppings;
+    this.crust=crust;
+}
+$(document).ready(function(){
     
 
-let price, totalPrice;
-        switch(flavour){
-            case flavour = "chicken tikka":
-                switch (size){
-                    case size = "medium":
-                        price = 700;
-                        if (crust === "cripsy") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "stuffed") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "Gluten free") {
-                            totalPrice = (price * number) + 300;
-                        } else {
-                            totalPrice = (price * number) + 300;
-                        }
-                        break;
-                        case size = "large":
-                            price = 1100;
-                            if (crust === "crispy") {
-                                totalPrice = (price * number) + 100;
-                            } else if (crust === "stuffed" ){
-                                totalPrice = (price * number) + 100;
-                            } else if (crust === "Gluten free") {
-                                totalPrice = (price * number) + 300;
-                            } else {
-                                totalPrice = (price * number) + 300;
-                            }
-                            break;
-                        case size = "x-large":
-                        price = 1500;
-                        if (crust === "crispy") {
-                          totalPrice = (price * number) + 100;
-                      } else if (crust === "stuffed" ){
-                          totalPrice = (price * number) + 100;
-                      } else if (crust === "Gluten free") {
-                          totalPrice = (price * number) + 300;
-                      } else {
-                          totalPrice = (price * number) + 300;
-                      }
-                        
-                        break;
-                    }
-                    break;
-                      case flavour = "BBQ steak":
-                          switch (size){
-                              case size = "medium":
-                                  price = 700;
-                                  if (crust === "cripsy") {
-                                      totalPrice = (price * number) + 100;
-                                  } else if (crust === "stuffed") {
-                                      totalPrice = (price * number) + 100;
-                                  } else if (crust === "Gluten free") {
-                                      totalPrice = (price * number) + 300;
-                                  } else {
-                                      totalPrice = (price * number) + 300;
-                                  }
-                                  break;
-                                  case size = "large":
-                                      price = 1100;
-                                      if (crust === "crispy") {
-                                          totalPrice = (price * number) + 100;
-                                      } else if (crust === "stuffed" ){
-                                          totalPrice = (price * number) + 100;
-                                      } else if (crust === "Gluten free") {
-                                          totalPrice = (price * number) + 300;
-                                      } else {
-                                          totalPrice = (price * number) + 300;
-                                      }
-                                      break;
-                                  case size = "x-large":
-                                  price = 1500;
-                                  if (crust === "crispy") {
-                                    totalPrice = (price * number) + 100;
-                                } else if (crust === "stuffed" ){
-                                    totalPrice = (price * number) + 100;
-                                } else if (crust === "Gluten free") {
-                                    totalPrice = (price * number) + 300;
-                                } else {
-                                    totalPrice = (price * number) + 300;
-                                }
-                                  
-                                  break;
-                              }
+    $("#deliver").click(function(){
 
+        $(".yes").show()
+        $("#formpizza").hide()
 
-                              break;
-                                case flavour = "peri-peri chicken":
-                                    switch (size){
-                                        case size = "medium":
-                                            price = 700;
-                                            if (crust === "cripsy") {
-                                                totalPrice = (price * number) + 100;
-                                            } else if (crust === "stuffed") {
-                                                totalPrice = (price * number) + 100;
-                                            } else if (crust === "Gluten free") {
-                                                totalPrice = (price * number) + 300;
-                                            } else {
-                                                totalPrice = (price * number) + 300;
-                                            }
-                                            break;
-                                            case size = "large":
-                                                price = 1100;
-                                                if (crust === "crispy") {
-                                                    totalPrice = (price * number) + 100;
-                                                } else if (crust === "stuffed" ){
-                                                    totalPrice = (price * number) + 100;
-                                                } else if (crust === "Gluten free") {
-                                                    totalPrice = (price * number) + 300;
-                                                } else {
-                                                    totalPrice = (price * number) + 300;
-                                                }
-                                                break;
-                                            case size = "x-large":
-                                            price = 1500;
-                                            if (crust === "crispy") {
-                                              totalPrice = (price * number) + 100;
-                                          } else if (crust === "stuffed" ){
-                                              totalPrice = (price * number) + 100;
-                                          } else if (crust === "Gluten free") {
-                                              totalPrice = (price * number) + 300;
-                                          } else {
-                                              totalPrice = (price * number) + 300;
-                                          }
-                                            
-                                            break;
-                                        }
+        function myPizza(){
+            const pizzaCost = document.getElementById("pizza").value;
+            return parseInt(pizzaCost);
+        }
+        function myToppings(){
+            const toppingsCost = document.getElementById("toppings").value;
+            return parseInt(toppingsCost);
+        }
+        function myCrust(){
+            const crustCost = document.getElementById("crust").value;
+            return parseInt(crustCost);
+        }
+        let cost =  new orders(myPizza(), myToppings(), myCrust())
+        
+        var totalCost = cost.pizza + cost.toppings + cost.crust 
+        // alert(totalCost)
+    
+       
+        $("#ok").append(" Your total amount is"  + " " + totalCost + " " + " you can pick your pizza." );
+        
+    })
+    $("#no").click(function(){
+        $("#ok").show()
+        $(".yes").hide()
+        
+    })
+    $("#yes").click(function(){
+        $("#ok").hide()
+        $("#form2").show()
+        $(".yes").hide()
 
-                                        break;
-                                          case flavour = "chicken hawaiian":
-                                              switch (size){
-                                                  case size = "medium":
-                                                      price = 700;
-                                                      if (crust === "cripsy") {
-                                                          totalPrice = (price * number) + 100;
-                                                      } else if (crust === "stuffed") {
-                                                          totalPrice = (price * number) + 100;
-                                                      } else if (crust === "Gluten free") {
-                                                          totalPrice = (price * number) + 300;
-                                                      } else {
-                                                          totalPrice = (price * number) + 300;
-                                                      }
-                                                      break;
-                                                      case size = "large":
-                                                          price = 1100;
-                                                          if (crust === "crispy") {
-                                                              totalPrice = (price * number) + 100;
-                                                          } else if (crust === "stuffed" ){
-                                                              totalPrice = (price * number) + 100;
-                                                          } else if (crust === "Gluten free") {
-                                                              totalPrice = (price * number) + 300;
-                                                          } else {
-                                                              totalPrice = (price * number) + 300;
-                                                          }
-                                                          break;
-                                                      case size = "x-large":
-                                                      price = 1500;
-                                                      if (crust === "crispy") {
-                                                        totalPrice = (price * number) + 100;
-                                                    } else if (crust === "stuffed" ){
-                                                        totalPrice = (price * number) + 100;
-                                                    } else if (crust === "Gluten free") {
-                                                        totalPrice = (price * number) + 300;
-                                                    } else {
-                                                        totalPrice = (price * number) + 300;
-                                                    }
-                                                      
-                                                      break;
-                                                  }
-                                                  break;
-                                                };
-                                                switch(topping){
-                                                  case topping="extra cheese":
-                                                    totalPrice=totalPrice+150;
-                                                    break;
-                                                    case topping="onions":
-                                                    totalPrice=totalPrice+120;
-                                                    break;
-                                                    case topping="black olives":
-                                                    totalPrice=totalPrice+120;
-                                                    break;
-                                                };
-                              let  newOrder= order(flavor,size,crust,topping,number,totalPrice);
-                              console.log(newOrder);
+        
+    })
 
-                              $('#summary').slideDown(3000);
-                              $('.customerdata').slideUp();
-                              $('#list').slideDown();
-                              $('.deliver').show(1000);
-                              $('.delivernot').show(1000);
-                              $('#list').text("");
-                              $('#list').append("<br>"+ "flavor:" + newOrder.flavor + "<br>" +"size:"
-                              +newOrder.size + "<br>" +"crust:"
-                              +newOrder.crust + "<br>" +"topping:"
-                              +newOrder.topping + "<br>" +"number:"
-                              +newOrder.number + "<br>" +"totalPrice:"
-                           });
+    $("#finalorder").click(function(){
+        $("#ok").hide()
+        $("#form2").show()
+        $(".yes").hide()
+        $("#yes").hide()
+         
+        function myPizza(){
+            const pizzaCost = document.getElementById("pizza").value;
+            return parseInt(pizzaCost);
+        }
+        function myToppings(){
+            const toppingsCost = document.getElementById("toppings").value;
+            return parseInt(toppingsCost);
+        }
+        function myCrust(){
+            const crustCost = document.getElementById("crust").value;
+            return parseInt(crustCost);
+        }
+        let cost =  new orders(myPizza(), myToppings(), myCrust())
+        
+        var totalCost = cost.pizza + cost.toppings + cost.crust 
 
-                            $(".deliver").click(function(){
-                            $('#summmary').slideUp();
-                            $('#list').slideUp();
-                            $('#summmary').text("provide location details").slideDown();
-                            $('.deliver').hide(1000);
-                            $('.delivernot').hide(1000);
-                            $('.cdata-overlay').slideDown();
-                            alert('Your Delivery is on the Way.')
-                          });
+        var newCost = totalCost + 300 
+        
+        let customer = $("input#name").val();
+            let phone = $("input#phone").val();
+            let area = $("input#place").val();
+    
+            if ($("input#name").val() && $("input#phone").val() && $("input#place").val()!=""){
+               alert (" Hello" + " " + customer +" " + " we have received your order your total cost is" + " " 
+               + newCost + " " + " the product will be delivered to" + " " + area + " " + " thanks for choosing to shop with us")
+              }
+              else {
+                alert("Please fill in your delivery details");
+               
+              }
+        
 
-                           $('.delivernot').click(function(){
-                           alert('Thankyou for placing your order kindly come pick after thirty minutes.')
-                          });
+    });
+});
 
-                      
-                          $(document).ready(function(){
-                            $(function(){
-                              $.scrollify.move('#sum-order');
-                          });
-                  });
-                }
-                                              

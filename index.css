@@ -80,16 +80,7 @@ html{
     /* background-color: yellow; */
     /* background-image: url("https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbHBhcGVyJTIwd29vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"); */
 }
-.orders{
-    background-color: yellow;
-    margin-top: 70px;
-    align-items: center;
-}
 
-#checkout{
-    margin-bottom: 50px;
-    margin-top: 40px;
-}
 /* .socials{
     display: flex;
     height: 3vh;
@@ -98,59 +89,11 @@ html{
     text-align: space-between;
     justify-content: center;
 } */
-#name1{
-    margin-left: 20%;
-    
-    
-}
-#email1{
-    margin-left: 20%;
-    
-}
-#mobile-number{
-    margin-left: 20%;
-    
-}
-#location{
-    margin-left: 20%;
-    
-}
+
 .form-control:input-placeholder {
     color: white;
   }
-.deliver{
-    margin-top: 40px;
-    margin-bottom: 50px;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    letter-spacing: 2px;
-    background-color: yellow;
-    outline: none;
-    padding: 12.5px 13px;
-    border: none;
-    border-radius: 33px;
-    font-size: 14px;
-    
-}
-.delivernot{
-    margin-top: 40px;
-    margin-bottom: 50px;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    letter-spacing: 2px;
-    background-color: yellow;
-    outline: none;
-    padding: 12.5px 13px;
-    border: none;
-    border-radius: 33px;
-    font-size: 14px;
-    
 
-}
 .contact{
     margin-top: 80px;
   }
@@ -178,9 +121,9 @@ html{
       margin-bottom: 40px;
     
   }
-#name,
-#email,
-#text,
+#name1,
+#email1,
+#text1,
 {
     border: 1px solid white;
     background-color: transparent;
@@ -194,9 +137,7 @@ html{
     text-align: center;
    
 }
-#summary{
-       display: none;
-}
+
 .col-md-7{
     text-align: center;
     padding-left: 30%;
@@ -219,5 +160,72 @@ html{
     .view{
         height: 650px;
     }
+   
+     .summary-order{
+         padding-left: 40%;
+         background-image: url("https://images.unsplash.com/photo-1519690889869-e705e59f72e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHJlc3RhdXJhbnQlMjBzZXR0aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+         background-repeat: no-repeat;
+         background-size: cover;
+
+     
+     /* .order1{
+         padding-right: 70%;
+     } */
+     select{
+        font-size: large;
+    }
+    /* #name{
+        width: fit-content;
+        margin-left: 570px;
+    } */
+    
+    .yes, #form2{
+       display: none;
+    }
+    
+    .yes{
+        height: 150px;
+    }
+    
+    .pad{
+        padding: 0px;
+        color: red;
+    }
+    
+    .change{
+        background-color: rgb(30, 112, 145);
+        color: black;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .make{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    select{
+        padding: 10px;
+        background-color: coral;
+        border-radius: 20px;
+    }
+     .note{
+         color: red;
+         font-size: 15px;
+     }
+     button{
+        background-color: rgb(255, 102, 0);
+        margin-top: 20px;
+        padding: 6px;
+        border: 0;
+        color: white;
+    }
+    ::placeholder{
+        font-size: 1.5em;
+    }
+    
+    
 
    
