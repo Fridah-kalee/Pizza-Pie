@@ -1,0 +1,229 @@
+$function(){
+  $('.order-summary').hide();
+  $('.customerdata').hide();
+  $('#checkout').click(function(){
+    let flavour=$(".flavour option:selected").value();
+    let size=$(".size option:selected").value();
+    let crust=$(".crust option:selected").value();
+    let topping=$(".topping option:selected").value();
+    let number=$(".number option").value();
+    console.log(size);
+
+    let order =(flavor,size,crust,topping,number,total)=>{
+      return {flavor,size,crust,topping,number,total};
+    };
+    
+  })
+};
+
+let price, totalPrice;
+        switch(flavour){
+            case flavour = "chicken tikka":
+                switch (size){
+                    case size = "medium":
+                        price = 700;
+                        if (crust === "cripsy") {
+                            totalPrice = (price * number) + 100;
+                        } else if (crust === "stuffed") {
+                            totalPrice = (price * number) + 100;
+                        } else if (crust === "Gluten free") {
+                            totalPrice = (price * number) + 300;
+                        } else {
+                            totalPrice = (price * number) + 300;
+                        }
+                        break;
+                        case size = "large":
+                            price = 1100;
+                            if (crust === "crispy") {
+                                totalPrice = (price * number) + 100;
+                            } else if (crust === "stuffed" ){
+                                totalPrice = (price * number) + 100;
+                            } else if (crust === "Gluten free") {
+                                totalPrice = (price * number) + 300;
+                            } else {
+                                totalPrice = (price * number) + 300;
+                            }
+                            break;
+                        case size = "x-large":
+                        price = 1500;
+                        if (crust === "crispy") {
+                          totalPrice = (price * number) + 100;
+                      } else if (crust === "stuffed" ){
+                          totalPrice = (price * number) + 100;
+                      } else if (crust === "Gluten free") {
+                          totalPrice = (price * number) + 300;
+                      } else {
+                          totalPrice = (price * number) + 300;
+                      }
+                        
+                        break;
+                    }
+                    break;
+                      case flavour = "BBQ steak":
+                          switch (size){
+                              case size = "medium":
+                                  price = 700;
+                                  if (crust === "cripsy") {
+                                      totalPrice = (price * number) + 100;
+                                  } else if (crust === "stuffed") {
+                                      totalPrice = (price * number) + 100;
+                                  } else if (crust === "Gluten free") {
+                                      totalPrice = (price * number) + 300;
+                                  } else {
+                                      totalPrice = (price * number) + 300;
+                                  }
+                                  break;
+                                  case size = "large":
+                                      price = 1100;
+                                      if (crust === "crispy") {
+                                          totalPrice = (price * number) + 100;
+                                      } else if (crust === "stuffed" ){
+                                          totalPrice = (price * number) + 100;
+                                      } else if (crust === "Gluten free") {
+                                          totalPrice = (price * number) + 300;
+                                      } else {
+                                          totalPrice = (price * number) + 300;
+                                      }
+                                      break;
+                                  case size = "x-large":
+                                  price = 1500;
+                                  if (crust === "crispy") {
+                                    totalPrice = (price * number) + 100;
+                                } else if (crust === "stuffed" ){
+                                    totalPrice = (price * number) + 100;
+                                } else if (crust === "Gluten free") {
+                                    totalPrice = (price * number) + 300;
+                                } else {
+                                    totalPrice = (price * number) + 300;
+                                }
+                                  
+                                  break;
+                              }
+
+
+                              break;
+                                case flavour = "peri-peri chicken":
+                                    switch (size){
+                                        case size = "medium":
+                                            price = 700;
+                                            if (crust === "cripsy") {
+                                                totalPrice = (price * number) + 100;
+                                            } else if (crust === "stuffed") {
+                                                totalPrice = (price * number) + 100;
+                                            } else if (crust === "Gluten free") {
+                                                totalPrice = (price * number) + 300;
+                                            } else {
+                                                totalPrice = (price * number) + 300;
+                                            }
+                                            break;
+                                            case size = "large":
+                                                price = 1100;
+                                                if (crust === "crispy") {
+                                                    totalPrice = (price * number) + 100;
+                                                } else if (crust === "stuffed" ){
+                                                    totalPrice = (price * number) + 100;
+                                                } else if (crust === "Gluten free") {
+                                                    totalPrice = (price * number) + 300;
+                                                } else {
+                                                    totalPrice = (price * number) + 300;
+                                                }
+                                                break;
+                                            case size = "x-large":
+                                            price = 1500;
+                                            if (crust === "crispy") {
+                                              totalPrice = (price * number) + 100;
+                                          } else if (crust === "stuffed" ){
+                                              totalPrice = (price * number) + 100;
+                                          } else if (crust === "Gluten free") {
+                                              totalPrice = (price * number) + 300;
+                                          } else {
+                                              totalPrice = (price * number) + 300;
+                                          }
+                                            
+                                            break;
+                                        }
+
+                                        break;{
+                                          case flavour = "chicken hawaiian":
+                                              switch (size){
+                                                  case size = "medium":
+                                                      price = 700;
+                                                      if (crust === "cripsy") {
+                                                          totalPrice = (price * number) + 100;
+                                                      } else if (crust === "stuffed") {
+                                                          totalPrice = (price * number) + 100;
+                                                      } else if (crust === "Gluten free") {
+                                                          totalPrice = (price * number) + 300;
+                                                      } else {
+                                                          totalPrice = (price * number) + 300;
+                                                      }
+                                                      break;
+                                                      case size = "large":
+                                                          price = 1100;
+                                                          if (crust === "crispy") {
+                                                              totalPrice = (price * number) + 100;
+                                                          } else if (crust === "stuffed" ){
+                                                              totalPrice = (price * number) + 100;
+                                                          } else if (crust === "Gluten free") {
+                                                              totalPrice = (price * number) + 300;
+                                                          } else {
+                                                              totalPrice = (price * number) + 300;
+                                                          }
+                                                          break;
+                                                      case size = "x-large":
+                                                      price = 1500;
+                                                      if (crust === "crispy") {
+                                                        totalPrice = (price * number) + 100;
+                                                    } else if (crust === "stuffed" ){
+                                                        totalPrice = (price * number) + 100;
+                                                    } else if (crust === "Gluten free") {
+                                                        totalPrice = (price * number) + 300;
+                                                    } else {
+                                                        totalPrice = (price * number) + 300;
+                                                    }
+                                                      
+                                                      break;
+                                                  }
+                                                  break;
+                                                };
+                                                switch(topping{
+                                                  case topping="extra cheese":
+                                                    totalPrice=totalPrice+150;
+                                                    break;
+                                                    case topping="onions":
+                                                    totalPrice=totalPrice+120;
+                                                    break;
+                                                    case topping="black olives":
+                                                    totalPrice=totalPrice+120;
+                                                    break;
+                                                };
+                              let  newOrder=order(flavour,size,crust,topping,number,totalPrice);
+                              console.log(newOrder);
+
+                              $('.order-summary').slideDown(3000);
+                              $('.customerdata').slideUp();
+                              $('#list').slideDown();
+                              $('.deliver').show(1000);
+                              $('.delivernot').show(1000);
+                              $('#list').text("");
+                              $('#list').append("br")+"flavour:" + newOrder.flavour + "br" +"size:"
+                              newOrder.size + "br" +"crust:"
+                              newOrder.crust + "br" +"toppings:"
+                              newOrder.toppings + "br" +"number:"
+                              newOrder.number + "br" +"totalPrice:"
+                           });
+
+                            $(".deliver").click(function(){
+                            $('.order-summmary').slideUp();
+                            $('#list').slideUp();
+                            $('.order-summmary').text("provide location details").slideDown();
+                            $('.deliver').hide(1000);
+                            $('.delivernot').hide(1000);
+                            $('.customerdata').slideDown();
+                            alert('Your Delivery is on the Way.')
+                          });
+
+                           $('.delivernot').click(function(){
+                           alert('Thankyou for placing your order kindly come pick after thirty minutes.')
+                          });
+                                              

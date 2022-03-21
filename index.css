@@ -201,7 +201,14 @@ html{
     text-align: center;
     padding-left: 30%;
 }
-.message{
+/* .message{
     padding-left: 10%;
     width: 70vw;
-}
+} */
+.contact textarea {
+    width: 70%;
+    height: 250px;
+    margin: 0px auto;
+    width: 70vw;
+    padding-left: 10%;
+  }
