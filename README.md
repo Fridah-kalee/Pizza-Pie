@@ -12,13 +12,13 @@
 This is a clone website for Pizza online shop.It demonstrates the use of constructors, prototypes, objects, properties and methods in Javascript as well as using jQuery and DOM manipulation & traversal.
 
 ## Project Setup Instructions
-Open Terminal {Ctrl+Alt+T}
-git clone https://github.com/Fridah-kalee/Pizza-Pie.git
-cd Pizza-Pie
-code .(for Vs Code) or atom .(for Atom)
+* Open Terminal {Ctrl+Alt+T}
+* git clone https://github.com/Fridah-kalee/Pizza-Pie.git
+* cd Pizza-Pie
+* code .(for Vs Code) or atom .(for Atom)
 1. Ensure the following stylesheets have also be linked to you project
 * Bootstrap 4
-*google Fonts
+* google Fonts
 
 2. Script CDN
 * Javascript
@@ -37,7 +37,7 @@ Fridah-kalee
 
 ## Contact Information
 For any further inquiries or contributions or comments, reach me at ;
-GitHub:Fridah-kalee
+* GitHub:Fridah-kalee
 
 ## License
 MIT License Copyright (c) {2022}
