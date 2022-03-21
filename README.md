@@ -19,14 +19,14 @@ This is a clone website for Pizza online shop.It demonstrates the use of constru
 1. Ensure the following stylesheets have also be linked to you project
 * Bootstrap 4
 * google Fonts
-
 2. Script CDN
 * Javascript
 ## Technologies Used
-* HTML
-* BootStrap
-* JavaScript
-* Markdown
+* HTML-which was used to develop structure off the pages.
+* BootStrap-which was used in styling of the user interface.
+* JavaScript-which was used to make website responsive.
+* CSS-which was used for styling
+* jQuery-which was used for  Document Object Manipulation scripts.
 ## Behaviour Driven Development
 * User can select their preferred pizza flavor,prices for each are shown on selection.
 * User can select the type of crust they want, prices of different crust are shown on selection.
