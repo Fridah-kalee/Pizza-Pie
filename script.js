@@ -13,8 +13,6 @@ $function(){
       return {flavor,size,crust,topping,number,total};
     };
     
-  })
-};
 
 let price, totalPrice;
         switch(flavour){
