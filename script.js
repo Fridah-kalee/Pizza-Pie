@@ -1,6 +1,6 @@
 $function(){
-  $('#summary').hide();
-  $('.customerdata').hide();
+  $('.summary').hide();
+  $('.cdata-overlay').hide();
   $('#checkout').click(function(){
     let flavor=$(".flavor option:selected").val();
     let size=$("#size option:selected").val();
@@ -198,26 +198,26 @@ let price, totalPrice;
                               let  newOrder= order(flavor,size,crust,topping,number,totalPrice);
                               console.log(newOrder);
 
-                              $('#summary').slideDown(3000);
-                              $('.customerdata').slideUp();
+                              $('.summary').slideDown(3000);
+                              $('.cdata-overlay').slideUp();
                               $('#list').slideDown();
                               $('.deliver').show(1000);
                               $('.delivernot').show(1000);
                               $('#list').text("");
                               $('#list').append("<br>"+ "flavor:" + newOrder.flavor + "<br>" +"size:"
                               +newOrder.size + "<br>" +"crust:"
-                              +newOrder.crust + "<br>" +"toppings:"
-                              +newOrder.toppings + "<br>" +"number:"
+                              +newOrder.crust + "<br>" +"topping:"
+                              +newOrder.topping + "<br>" +"number:"
                               +newOrder.number + "<br>" +"totalPrice:"
                            });
 
                             $(".deliver").click(function(){
-                            $('#summmary').slideUp();
+                            $('.summmary').slideUp();
                             $('#list').slideUp();
-                            $('#summmary').text("provide location details").slideDown();
+                            $('.summmary').text("provide location details").slideDown();
                             $('.deliver').hide(1000);
                             $('.delivernot').hide(1000);
-                            $('.customerdata').slideDown();
+                            $('.cdata-overlay').slideDown();
                             alert('Your Delivery is on the Way.')
                           });
 
@@ -228,8 +228,8 @@ let price, totalPrice;
                       
                           $(document).ready(function(){
                             $(function(){
-                              $.scrollify.move('#summary');
+                              $.scrollify.move('#sum-order');
                           });
                   });
-
+                }
                                               
