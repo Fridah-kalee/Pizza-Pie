@@ -3,10 +3,10 @@ $function(){
   $('.customerdata').hide();
   $('#checkout').click(function(){
     let flavor=$(".flavor option:selected").val();
-    let size=$(".size option:selected").val();
-    let crust=$(".crust option:selected").val();
-    let topping=$(".topping option:selected").val();
-    let number=$(".number option").val();
+    let size=$("#size option:selected").val();
+    let crust=$("#crust option:selected").val();
+    let topping=$("#topping option:selected").val();
+    let number=$("#number").val();
     console.log(size);
 
     let order =(flavor,size,crust,topping,number,total)=>{
