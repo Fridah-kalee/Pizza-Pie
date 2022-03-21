@@ -1,6 +1,6 @@
 $function(){
-  $('.summary').hide();
-  $('.cdata-overlay').hide();
+  $('#summary').hide();
+  $('.customerdata').hide();
   $('#checkout').click(function(){
     let flavor=$(".flavor option:selected").val();
     let size=$("#size option:selected").val();
@@ -198,8 +198,8 @@ let price, totalPrice;
                               let  newOrder= order(flavor,size,crust,topping,number,totalPrice);
                               console.log(newOrder);
 
-                              $('.summary').slideDown(3000);
-                              $('.cdata-overlay').slideUp();
+                              $('#summary').slideDown(3000);
+                              $('.customerdata').slideUp();
                               $('#list').slideDown();
                               $('.deliver').show(1000);
                               $('.delivernot').show(1000);
@@ -212,9 +212,9 @@ let price, totalPrice;
                            });
 
                             $(".deliver").click(function(){
-                            $('.summmary').slideUp();
+                            $('#summmary').slideUp();
                             $('#list').slideUp();
-                            $('.summmary').text("provide location details").slideDown();
+                            $('#summmary').text("provide location details").slideDown();
                             $('.deliver').hide(1000);
                             $('.delivernot').hide(1000);
                             $('.cdata-overlay').slideDown();
